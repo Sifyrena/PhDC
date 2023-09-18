@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
-Div = LinearSegmentedColormap.from_list('myDiv', ['#003262', '#005b96', '#ffffff', '#d5a756', '#B51700'])
+Div = mcolors.LinearSegmentedColormap.from_list('myDiv', ['#003262', '#005b96', '#ffffff', '#d5a756', '#B51700'])
 
 China = mcolors.ListedColormap(np.array([(1,86,157),
                                          (233,117,29),

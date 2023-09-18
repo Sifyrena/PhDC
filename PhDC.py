@@ -2,9 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 
-Div = mcolors.LinearSegmentedColormap.from_list('myDiv', ['#003262', '#005b96', '#ffffff', '#d5a756', '#B51700'])
 
-China = mcolors.ListedColormap(np.array([(1,86,157),
+# Define the Arrays
+
+DivArr = ['#003262', '#005b96', '#ffffff', '#d5a756', '#B51700']
+
+ChnArr = np.array([(1,86,157),
                                          (233,117,29),
                                          (218,187,78),
                                          (115,86,52),
@@ -13,17 +16,17 @@ China = mcolors.ListedColormap(np.array([(1,86,157),
                                          (79,132,41),
                                          (127,106,103),
                                          (180,60,1),
-                                         (52,52,39)]) / 255)
+                                         (52,52,39)]) / 255
 
-Plates = mcolors.ListedColormap(np.array([(171, 28, 7), (226, 177, 25), (26, 55, 90), (96, 94, 82),
+PArr = np.array([(171, 28, 7), (226, 177, 25), (26, 55, 90), (96, 94, 82),
                    (54, 56, 16), (16, 60, 32), (192, 128, 61),
-                   (190, 190, 190)]) / 255)
+                   (190, 190, 190)]) / 255
 
-Plates_B = mcolors.ListedColormap(np.array([(255, 38, 10), (255, 199, 27), (61, 149, 255),
+PBArr = np.array([(255, 38, 10), (255, 199, 27), (61, 149, 255),
                    (215, 210, 182), (159, 166, 34), (43, 231, 110),
-                   (255, 158, 74), (227, 227, 231)]) / 255)
+                   (255, 158, 74), (227, 227, 231)]) / 255
 
-Teacups = mcolors.ListedColormap(np.array([
+TArr = np.array([
     (128, 168, 59), 
     (59, 91, 14), 
     (99, 167, 137),
@@ -31,9 +34,9 @@ Teacups = mcolors.ListedColormap(np.array([
     (235, 216, 155),
     (172, 167, 109),
     (100, 116, 142),
-    (75, 83, 95)]) / 255)
+    (75, 83, 95)]) / 255
 
-Bowls = mcolors.LinearSegmentedColormap.from_list("MyDiv",np.array([
+BArr = np.array([
     (0,0,0),
     (25,37,48),
     (64,87,107),
@@ -43,9 +46,9 @@ Bowls = mcolors.LinearSegmentedColormap.from_list("MyDiv",np.array([
     (178,175,112),
     (227,177,75),
     (224,82,42),
-    (255,0,50)]) / 255)
+    (255,0,50)]) / 255
 
-Bowls2 = mcolors.LinearSegmentedColormap.from_list("MyDiv",np.array([
+B2Arr = np.array([
     (0,0,0),
     (25,37,48),
     (64,87,107),
@@ -54,7 +57,25 @@ Bowls2 = mcolors.LinearSegmentedColormap.from_list("MyDiv",np.array([
     (143,157,128),
     (178,175,112),
     (227,177,75),
-    (255,82,42)]) / 255)
+    (255,82,42)]) / 255
+
+
+# Definitions
+
+China = mcolors.ListedColormap(ChnArr)
+
+Plates = mcolors.ListedColormap(PArr)
+
+Plates_B = mcolors.ListedColormap(PBArr)
+
+Teacups = mcolors.ListedColormap(TArr)
+
+Bowls = mcolors.LinearSegmentedColormap.from_list("MyDiv",BArr)
+
+Bowls2 = mcolors.LinearSegmentedColormap.from_list("MyDiv",B2Arr)
+
+
+Div = mcolors.LinearSegmentedColormap.from_list('myDiv', DivArr)
 
 Def = China
 Lines = Plates

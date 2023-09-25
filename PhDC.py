@@ -7,6 +7,9 @@ import matplotlib.colors as mcolors
 
 DivArr = ['#003262', '#005b96', '#ffffff', '#d5a756', '#B51700']
 
+CycArr = np.array([(75,56,72), (1,86,157), (200,198,200), (180,60,1), (75,56,72)])/255
+
+
 ChnArr = np.array([(1,86,157),
                                          (233,117,29),
                                          (218,187,78),
@@ -64,11 +67,14 @@ B2Arr = np.array([
 
 China = mcolors.ListedColormap(ChnArr)
 
+
 Plates = mcolors.ListedColormap(PArr)
 
 Plates_B = mcolors.ListedColormap(PBArr)
 
 Teacups = mcolors.ListedColormap(TArr)
+
+CNCyc = mcolors.LinearSegmentedColormap.from_list("MyDiv",CycArr)
 
 Bowls = mcolors.LinearSegmentedColormap.from_list("MyDiv",BArr)
 
@@ -83,3 +89,4 @@ Scatter = Plates_B
 Duo = Teacups
 CM = Bowls
 CMP = Bowls2
+Cyc = CNCyc

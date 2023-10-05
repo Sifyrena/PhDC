@@ -5,7 +5,7 @@ import matplotlib.colors as mcolors
 
 # Define the Arrays
 
-DivArr = ['#003262', '#005b96', '#ffffff', '#d5a756', '#B51700']
+DivArr = np.array([(1,50,182),(1,86,157), (255,255,250), (255,0,26), (136,10,44)])/255 
 
 CycArr = np.array([(75,56,72), (1,86,157), (200,198,200), (180,60,1), (75,56,72)])/255
 
